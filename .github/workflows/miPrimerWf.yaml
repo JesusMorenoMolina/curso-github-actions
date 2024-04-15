@@ -1,0 +1,22 @@
+name: 01 - Firstworkflow
+on: 
+    - push
+    - workflow_dispatch
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Saludar
+              run: echo 'Hello world'
+    job2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Multi-line bash
+              run: |
+               echo "I am"
+               echo "a multi-line"
+               echo "script."
+            - name: Decir adios
+              run: echo "adios"
+            
+
